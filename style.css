@@ -1,0 +1,94 @@
+/* Tipografia base: Poppins */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f8f6;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing, .slides {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.nav {
+  margin-top: 2rem;
+}
+
+.nav button {
+  margin: 0 1rem;
+}
+
+.instagram-link {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.instagram-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #222;
+  font-weight: 400;
+}
+
+.instagram-link a:hover {
+  opacity: 0.8;
+}
