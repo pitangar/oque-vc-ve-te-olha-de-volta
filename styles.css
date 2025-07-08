@@ -61,7 +61,7 @@ body {
 
 /* Dropdown menu - escondido por padrão */
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   top: 2.8rem; /* abaixo do menu */
   left: 0;
