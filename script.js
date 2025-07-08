@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownContent.style.display = 'block';
 
     dropdown.addEventListener('mouseenter', () => {
-      dropdownContent.style.display = 'block';
+      dropdownContent.style.display = 'none';
     });
 
     dropdown.addEventListener('mouseleave', () => {
