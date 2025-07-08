@@ -48,3 +48,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+    const dropdownToggle = document.getElementById('dropdown-toggle');
+    const dropdown = dropdownToggle.parentElement;
+
+    // Toggle menu no mobile
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+
+    // Toggle dropdown no mobile
+    dropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open');
+    });
+
+    // Fechar dropdown ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+</script>
+
