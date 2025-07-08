@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdown = document.querySelector('.dropdown');
   const dropdownContent = dropdown.querySelector('.dropdown-content');
 
-  dropdownContent.style.display = 'none'; // Escondendo!!
+  dropdownContent.style.display = 'none'; // Esconde 
 
   dropdown.addEventListener('mouseenter', () => {
     dropdownContent.style.display = 'block';
