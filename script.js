@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   dropdowns.forEach(dropdown => {
     const dropdownContent = dropdown.querySelector('.dropdown-content');
     dropdownContent.style.display = 'none';
-    if else dropdownContent.style.display = 'block';
+    if dropdownContent.style.display = 'block';
 
     dropdown.addEventListener('mouseenter', () => {
       dropdownContent.style.display = 'block';
