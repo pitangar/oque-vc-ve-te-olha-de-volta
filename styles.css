@@ -5,11 +5,24 @@
   box-sizing: border-box;
 }
 
+/* FONTES */
+@font-face {
+  font-family: 'Cutesy';
+  src: url('./fonts/Cutesy.ttf') format('truetype');
+}
+
+/* Fontes padrões do site */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f9f9f9;
   color: #333;
-  padding-top: 70px; /* Espaço para header fixo */
+  padding-top: 70px;
+}
+
+/* Aplica Cutesy onde for necessário */
+.logo,
+.titulo-cutesy {
+  font-family: 'Cutesy', cursive;
 }
 
 /* Header */
@@ -27,7 +40,6 @@ body {
 }
 
 .top-nav .logo {
-  font-family: 'Ghofey', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
@@ -59,7 +71,7 @@ body {
   color: #ff6f61;
 }
 
-/* Dropdown menu */
+/* Dropdown */
 .dropdown-content {
   display: none;
   opacity: 0;
@@ -97,7 +109,7 @@ body {
   background-color: #444;
 }
 
-/* Intro section */
+/* Intro */
 .intro {
   padding: 120px 20px 40px;
   max-width: 900px;
@@ -106,7 +118,6 @@ body {
 }
 
 .intro h1 {
-  font-family: 'Ghofey', sans-serif;
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: #222;
@@ -166,9 +177,9 @@ footer {
 }
 
 footer h3 {
-  font-family: 'Ghofey', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 footer a {
