@@ -1,55 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>o que você te olha de volta</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <title>o que voce ve te olha de volta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Tela inicial -->
-  <div class="landing">
-    <h1>o que você te olha de volta</h1>
-    <p>um exercício poético de contemplação e fotografia.</p>
-    <button id="start">acessar o conteúdo</button>
-  </div>
 
-  <!-- Slides de conteúdo -->
-  <div class="slides hidden">
-    <div class="slide">
-      <h2>Desafio 1</h2>
-      <p>Fotografe algo que te encara sem olhos.</p>
-    </div>
-    <div class="slide">
-      <h2>Desafio 2</h2>
-      <p>Escolha um objeto esquecido e olhe para ele por um minuto antes de fotografá-lo.</p>
-    </div>
-    <div class="slide">
-      <h2>Desafio 3</h2>
-      <p>Registre uma ausência. Aquilo que não está mais.</p>
-    </div>
-    <!-- Última página -->
-    <div class="slide end">
-      <h2>Fim</h2>
-      <p>Você pode voltar e refazer. A fotografia não precisa de pressa.</p>
+  <!-- HEADER FIXO -->
+  <header class="top-nav">
+    <div class="logo">o que voce ve te olha de volta</div>
+    <nav>
+      <ul>
+        <li><a href="#introducao" class="nav-item">Introdução</a></li>
+        <li class="dropdown">
+          <span class="nav-item">Desafios ▾</span>
+          <ul class="dropdown-content">
+            <li><a href="#desafio1">Desafio 1</a></li>
+            <li><a href="#desafio2">Desafio 2</a></li>
+            <li><a href="#desafio3">Desafio 3</a></li>
+            <li><a href="#desafio4">Desafio 4</a></li>
+            <li><a href="#desafio5">Desafio 5</a></li>
+            <li><a href="#desafio6">Desafio 6</a></li>
+            <li><a href="#desafio7">Desafio 7</a></li>
+            <li><a href="#desafio8">Desafio 8</a></li>
+            <li><a href="#desafio9">Desafio 9</a></li>
+            <li><a href="#desafio10">Desafio 10</a></li>
+            <li><a href="#desafio11">Desafio 11</a></li>
+            <li><a href="#desafio12">Desafio 12</a></li>
+            <li><a href="#desafio13">Desafio 13</a></li>
+            <li><a href="#desafio14">Desafio 14</a></li>
+            <li><a href="#desafio15">Desafio 15</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer" class="nav-item">@oquevoceve</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="instagram-link">
-        <p>Compartilhe sua imagem com a hashtag <strong>#oquevocêteolhadevolta</strong> ou nos marque no Instagram:</p>
-        <a href="https://www.instagram.com/oquevoce.teolhadevolta/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24">
-          <span>@oquevoce.teolhadevolta</span>
-        </a>
+  <!-- INTRODUÇÃO -->
+  <section id="introducao" class="intro">
+    <h1>o que voce ve te olha de volta</h1>
+    <p>um trabalho que fala sobre fotografia e sensibilidade.</p>
+  </section>
+
+  <!-- DESAFIOS -->
+  <section class="exercise bloco1" id="desafio1">
+    <div class="container-desafio">
+      <div class="titulo-lado-esquerdo">
+        <h2>CONTEMPLE E REGISTRE O MESMO LUGAR 12 VEZES</h2>
+      </div>
+      <div class="texto-lado-direito">
+        <p>O que muda quando você fotografa o mesmo canto da sua casa, da janela do ônibus, ou a sombra da árvore na calçada, doze vezes? Tente fazer um registro no mesmo ângulo, no mesmo horário em dias diferentes (consecutivos ou não). Busque encontrar um objeto ou paisagem estática para repetir o mesmo modo operandi para as 12 imagens.</p>
       </div>
     </div>
+  </section>
 
-    <div class="nav">
-      <button id="prev">←</button>
-      <button id="next">→</button>
+  <!-- Placeholder desafios 2 a 15 -->
+  <section class="exercise bloco2" id="desafio2">
+    <div class="container-desafio">
+      <div class="titulo-lado-esquerdo">
+        <h2>RETRATE SEM USAR O RETRATO</h2>
+      </div>
+      <div class="texto-lado-direito">
+        <p>Como fotografar alguém sem mostrar seu rosto? Faça apenas um retrato feito de mãos, pés, costas ou objetos pessoais. Após o clique envie a fotografia para o retratado, escrevendo junto uma palavra que defina essa pessoa.</p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Geração dos placeholders até o 15 -->
+  <script>
+    const container = document.createDocumentFragment();
+    for(let i=3; i<=15; i++) {
+      const bloco = document.createElement('section');
+      bloco.className = `exercise ${i % 2 === 1 ? 'bloco1' : 'bloco2'}`;
+      bloco.id = `desafio${i}`;
+
+      bloco.innerHTML = `
+        <div class="container-desafio">
+          <div class="titulo-lado-esquerdo">
+            <h2>DESAFIO ${i}</h2>
+          </div>
+          <div class="texto-lado-direito">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proposta do desafio ${i}.</p>
+          </div>
+        </div>`;
+      container.appendChild(bloco);
+    }
+    document.body.insertBefore(container, document.getElementById('footer'));
+  </script>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <h3>@oquevoceve por aí</h3>
+    <p>Siga no Instagram: <a href="https://www.instagram.com/oquevoceve" target="_blank" rel="noopener noreferrer">@oquevoceve</a></p>
+  </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>

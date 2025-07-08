@@ -1,0 +1,187 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+
+.top-nav .logo {
+  font-family: 'Ghofey', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.top-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.top-nav nav ul li {
+  position: relative;
+}
+
+.top-nav nav ul li a,
+.top-nav nav ul li span.nav-item {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700; /* Poppins bold */
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.top-nav nav ul li a:hover,
+.top-nav nav ul li span.nav-item:hover {
+  color: #ff6f61;
+}
+
+/* Dropdown menu - escondido por padrão */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 2.8rem; /* abaixo do menu */
+  left: 0;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1100;
+}
+
+/* Mostrar dropdown apenas no hover do pai */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 0.4rem 1rem;
+}
+
+.dropdown-content li a {
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-content li a:hover {
+  background-color: #444;
+}
+
+/* Intro section */
+.intro {
+  padding: 120px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-family: 'Ghofey', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.intro p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* Seções dos desafios com largura total e cores alternadas */
+.exercise {
+  width: 100vw;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.exercise .container-desafio {
+  max-width: 960px;
+  width: 90%;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* Título à esquerda */
+.titulo-lado-esquerdo {
+  flex: 1;
+  font-family: 'Ghofey', sans-serif;
+  font-size: 1.9rem;
+  color: #222;
+}
+
+/* Texto à direita */
+.texto-lado-direito {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Cores alternadas */
+.bloco1 {
+  background-color: #fff;
+}
+
+.bloco2 {
+  background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+footer h3 {
+  font-family: 'Ghofey', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Espaço para header fixo */
+body {
+  padding-top: 70px;
+}
