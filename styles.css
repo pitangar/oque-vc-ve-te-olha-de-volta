@@ -5,24 +5,10 @@
   box-sizing: border-box;
 }
 
-/* FONTES */
-@font-face {
-  font-family: 'Cutesy';
-  src: url('./fonts/Cutesy.ttf') format('truetype');
-}
-
-/* Fontes padrões do site */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f9f9f9;
   color: #333;
-  padding-top: 70px;
-}
-
-/* Aplica Cutesy onde for necessário */
-.logo,
-.titulo-cutesy {
-  font-family: 'Cutesy', cursive;
 }
 
 /* Header */
@@ -39,7 +25,9 @@ body {
   z-index: 1000;
 }
 
+/* Logo usa fonte Ghofey */
 .top-nav .logo {
+  font-family: 'Ghofey', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
@@ -61,7 +49,7 @@ body {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 700; /* Poppins bold */
   font-family: 'Poppins', sans-serif;
   transition: color 0.3s ease;
 }
@@ -71,13 +59,11 @@ body {
   color: #ff6f61;
 }
 
-/* Dropdown */
+/* Dropdown menu - escondido por padrão */
 .dropdown-content {
   display: none;
-  opacity: 0;
-  pointer-events: none;
   position: absolute;
-  top: 2.8rem;
+  top: 2.8rem; /* abaixo do menu */
   left: 0;
   background-color: #333;
   border-radius: 4px;
@@ -85,13 +71,11 @@ body {
   min-width: 160px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   z-index: 1100;
-  transition: opacity 0.3s ease;
 }
 
-.dropdown-content.show {
+/* Mostrar dropdown apenas no hover do pai */
+.dropdown:hover .dropdown-content {
   display: block;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .dropdown-content li {
@@ -109,7 +93,7 @@ body {
   background-color: #444;
 }
 
-/* Intro */
+/* Intro section */
 .intro {
   padding: 120px 20px 40px;
   max-width: 900px;
@@ -117,18 +101,21 @@ body {
   text-align: center;
 }
 
+/* Título da intro usa Ghofey */
 .intro h1 {
+  font-family: 'Ghofey', sans-serif;
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: #222;
 }
 
+/* Texto da intro */
 .intro p {
   font-size: 1.3rem;
   color: #555;
 }
 
-/* Seções dos desafios */
+/* Seções dos desafios com largura total e cores alternadas */
 .exercise {
   width: 100vw;
   padding: 100px 0;
@@ -144,6 +131,7 @@ body {
   align-items: flex-start;
 }
 
+/* Título à esquerda */
 .titulo-lado-esquerdo {
   flex: 1;
   font-family: 'Ghofey', sans-serif;
@@ -151,6 +139,7 @@ body {
   color: #222;
 }
 
+/* Texto à direita */
 .texto-lado-direito {
   flex: 2;
   font-size: 1.1rem;
@@ -176,7 +165,9 @@ footer {
   margin-top: 3rem;
 }
 
+/* Título do footer usa Ghofey */
 footer h3 {
+  font-family: 'Ghofey', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #fff;
@@ -191,4 +182,9 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Espaço para header fixo */
+body {
+  padding-top: 70px;
 }
