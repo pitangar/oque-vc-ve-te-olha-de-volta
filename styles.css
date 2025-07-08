@@ -117,28 +117,6 @@ body {
   margin: 0 auto;
 }
 
-/* Intro section */
-.intro {
-  padding: 120px 20px 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Título da intro usa Ghofey */
-.intro h1 {
-  font-family: 'Ghofey', sans-serif;
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-/* Texto da intro */
-.intro p {
-  font-size: 1.3rem;
-  color: #555;
-}
-
 /* Seções dos desafios com largura total e cores alternadas */
 .exercise {
   width: 100vw;
