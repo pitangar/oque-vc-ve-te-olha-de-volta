@@ -226,43 +226,9 @@
     </div>
   </section>
 
-  
-  <section class="exercise bloco2" id="desafio2">
-    <div class="container-desafio">
-      <div class="titulo-lado-esquerdo">
-        <h2>RETRATE SEM USAR O RETRATO</h2>
-      </div>
-      <div class="texto-lado-direito">
-        <p>Como fotografar alguém sem mostrar seu rosto? Faça apenas um retrato feito de mãos, pés, costas ou objetos pessoais. Após o clique envie a fotografia para o retratado, escrevendo junto uma palavra que defina essa pessoa.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Geração dos placeholders até o 15 -->
-  <script>
-    const container = document.createDocumentFragment();
-    for(let i=3; i<=15; i++) {
-      const bloco = document.createElement('section');
-      bloco.className = `exercise ${i % 2 === 1 ? 'bloco1' : 'bloco2'}`;
-      bloco.id = `desafio${i}`;
-
-      bloco.innerHTML = `
-        <div class="container-desafio">
-          <div class="titulo-lado-esquerdo">
-            <h2>DESAFIO ${i}</h2>
-          </div>
-          <div class="texto-lado-direito">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proposta do desafio ${i}.</p>
-          </div>
-        </div>`;
-      container.appendChild(bloco);
-    }
-    document.body.insertBefore(container, document.getElementById('footer'));
-  </script>
-
   <!-- FOOTER -->
   <footer id="footer">
-    <h3>@oquevoceve por aí</h3>
+    <h3>@oquevoceve.teolha por aí</h3>
     <p>Siga no Instagram: <a href="https://www.instagram.com/oquevoceve.teolha" target="_blank" rel="noopener noreferrer">@oquevoceve.teolha</a></p>
   </footer>
 
