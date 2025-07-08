@@ -325,3 +325,26 @@ footer h3.titulo-ghofey {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .exercise {
+    padding: 60px 20px;
+  }
+
+  .exercise .container-desafio {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .titulo-lado-esquerdo {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .texto-lado-direito {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 100%;
+  }
+}
