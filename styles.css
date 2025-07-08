@@ -93,28 +93,26 @@ body {
   background-color: #444;
 }
 
-/* INTRODUÇÃO DESTACADA */
+/* Intro section */
 .intro {
-  padding: 160px 20px 100px; /* Topo maior que os blocos */
-  max-width: 960px;
+  padding: 120px 20px 40px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* Título da intro usa Ghofey */
 .intro h1 {
   font-family: 'Ghofey', sans-serif;
-  font-size: 3.6rem; /* Título maior */
-  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
   color: #222;
-  line-height: 1.2;
 }
 
+/* Texto da intro */
 .intro p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #555;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 /* Seções dos desafios com largura total e cores alternadas */
