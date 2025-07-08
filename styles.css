@@ -93,6 +93,30 @@ body {
   background-color: #444;
 }
 
+/* INTRODUÇÃO DESTACADA */
+.intro {
+  padding: 160px 20px 100px; /* Topo maior que os blocos */
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-family: 'Ghofey', sans-serif;
+  font-size: 3.6rem; /* Título maior */
+  margin-bottom: 1.5rem;
+  color: #222;
+  line-height: 1.2;
+}
+
+.intro p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* Intro section */
 .intro {
   padding: 120px 20px 40px;
