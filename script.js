@@ -1,18 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const dropdown = document.querySelector('.dropdown');
-  if (!dropdown) return;
-
   const dropdownContent = dropdown.querySelector('.dropdown-content');
-  if (!dropdownContent) return;
 
-  // Inicialmente esconde dropdown
-  dropdownContent.style.display = 'none';
+  // Garante que o menu começa escondido
+  dropdownContent.classList.remove('show');
 
   dropdown.addEventListener('mouseenter', () => {
-    dropdownContent.style.display = 'block';
+    dropdownContent.classList.add('show');
   });
 
   dropdown.addEventListener('mouseleave', () => {
-    dropdownContent.style.display = 'none';
+    dropdownContent.classList.remove('show');
   });
 });
