@@ -128,7 +128,7 @@ body {
   width: 90%;
   display: flex;
   gap: 3rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Título à esquerda */
