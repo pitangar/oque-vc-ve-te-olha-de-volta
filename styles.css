@@ -167,26 +167,31 @@ footer {
   margin-top: 3rem;
 }
 
-/* Título do footer usa Ghofey */
-footer h3 {
+/* Título do footer com fonte Ghofey */
+footer h3.titulo-ghofey {
   font-family: 'Ghofey', sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
 }
 
-footer a {
-  color: #ff6f61;
+/* Botão de seguir */
+.seguir-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff6f61;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.seguir-btn:hover {
+  background-color: #e55b4d;
 }
 
-/* Espaço para header fixo */
-body {
-  padding-top: 70px;
+/* Ajuste no mini-feed do Instagram */
+.rssapp-widget {
+  max-width: 100%;
+  margin-top: 1.5rem;
 }
