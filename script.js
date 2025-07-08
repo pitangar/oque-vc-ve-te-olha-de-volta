@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdown = document.querySelector('.dropdown');
   const dropdownContent = dropdown.querySelector('.dropdown-content');
 
-  // Garante que o menu começa escondido
-  dropdownContent.classList.remove('show');
+  dropdownContent.style.display = 'none'; // Esconde ao carregar
 
   dropdown.addEventListener('mouseenter', () => {
-    dropdownContent.classList.add('show');
+    dropdownContent.style.display = 'block';
   });
 
   dropdown.addEventListener('mouseleave', () => {
-    dropdownContent.classList.remove('show');
+    dropdownContent.style.display = 'none';
   });
 });
