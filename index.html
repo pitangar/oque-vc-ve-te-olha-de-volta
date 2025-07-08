@@ -8,6 +8,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+    const dropdownToggle = document.getElementById('dropdown-toggle');
+    const dropdown = dropdownToggle.parentElement;
+
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+
+    dropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+</script>
 
 <!-- HEADER FIXO -->
 <header class="top-nav">
