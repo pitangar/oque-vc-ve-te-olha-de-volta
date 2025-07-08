@@ -138,6 +138,7 @@ body {
   font-size: 1.9rem;
   color: #222;
   margin-bottom: 1rem;
+  word-wrap: break-word;
 }
 
 /* Texto à direita */
